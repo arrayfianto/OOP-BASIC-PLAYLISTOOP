@@ -21,6 +21,8 @@ public class PlaylistOOP {
 
     Scanner input = new Scanner(System.in);
     int pilihanUtama;
+    int lastIndex = 0; // variable untuk mendeteksi index terakhir lagu setelah proses tambah
+    Lagu[] lagu = new Lagu[100]; // Inisialisasi class Lagu
 
     do {
       System.out.println("===== Sistem Playlist Musik =====");
@@ -53,7 +55,9 @@ public class PlaylistOOP {
 
               case 2:
                 System.out.println("== Tambah Lagu ==");
-                // addSong();
+                Admin admin = new Admin(); // Inisialisasi class admin
+                admin.addSong(lagu, lastIndex); // run function addSong untuk menambah data lagu
+                lastIndex++; // lastIndex + 1 agar saat proses penambahan lagu selanjutnya index tidak bertabrakan
                 tekanEnter(input);
                 break;
 
