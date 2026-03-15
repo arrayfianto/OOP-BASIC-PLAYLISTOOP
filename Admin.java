@@ -1,6 +1,6 @@
 import java.util.Scanner; // import scanner untuk terima inputan
 
-class Admin {
+class Admin extends User {
 
     public void addSong(Lagu[] songList, int lastIndex) {
         // START INPUT Judul Lagu, Nama Artis & Durasi Lagu

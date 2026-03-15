@@ -1,11 +1,6 @@
 import java.util.Scanner; // Import scanner untuk input nama lagu
 
-class Member{
-    public void viewAllSong(Lagu[] playlist, int lastIndex){
-        for (int i = 0; i < lastIndex; i++) { // menjalankan looping for object lagu sampai index terakhir
-            playlist[i].tampilkanInfo(); // Run function tampilkanInfo dari class lagu
-        }        
-    }
+class Member extends User {
 
     public void findSong(Lagu[] playlist, int lastIndex){
         Scanner sc = new Scanner(System.in); // Inisialisasi scanner
