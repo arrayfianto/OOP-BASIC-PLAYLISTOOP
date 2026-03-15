@@ -3,7 +3,7 @@ import java.util.Scanner; // import scanner untuk terima inputan
 class Admin {
 
     public void addSong(Lagu[] songList, int lastIndex) {
-        // START INPUT Judul Lagu, Nama Artis & Durasi Lagu (Detik)
+        // START INPUT Judul Lagu, Nama Artis & Durasi Lagu
         Scanner input = new Scanner(System.in);
         System.out.print("Masukkan Judul Lagu: ");
         String judulLagu = input.nextLine();
@@ -13,7 +13,7 @@ class Admin {
 
         System.out.print("Masukkan Durasi Lagu: ");
         Double durasiLagu = input.nextDouble();
-        // END INPUT Judul Lagu, Nama Artis & Durasi Lagu (Detik)
+        // END INPUT Judul Lagu, Nama Artis & Durasi Lagu
 
         // Menambahkan data lagu ke object songlist dengan index lastIndex
         songList[lastIndex] = new Lagu(judulLagu, namaArtis, durasiLagu);

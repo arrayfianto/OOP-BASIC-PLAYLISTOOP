@@ -23,7 +23,8 @@ public class PlaylistOOP {
     int pilihanUtama;
     int lastIndex = 0; // variable untuk mendeteksi index terakhir lagu setelah proses tambah
     Lagu[] lagu = new Lagu[100]; // Inisialisasi class Lagu
-
+    Member member = new Member(); // Inisialisasi class member
+    Admin admin = new Admin(); // Inisialisasi class admin
     do {
       System.out.println("===== Sistem Playlist Musik =====");
       System.out.println("1. Login sebagai Admin");
@@ -49,13 +50,12 @@ public class PlaylistOOP {
             switch (menuAdmin) {
               case 1:
                 System.out.println("== Daftar Semua Lagu ==");
-                // viewAllSong();
+                member.viewAllSong(lagu, lastIndex);
                 tekanEnter(input);
                 break;
 
               case 2:
                 System.out.println("== Tambah Lagu ==");
-                Admin admin = new Admin(); // Inisialisasi class admin
                 admin.addSong(lagu, lastIndex); // run function addSong untuk menambah data lagu
                 lastIndex++; // lastIndex + 1 agar saat proses penambahan lagu selanjutnya index tidak bertabrakan
                 tekanEnter(input);
@@ -88,13 +88,13 @@ public class PlaylistOOP {
             switch (menuMember) {
               case 1:
                 System.out.println("== Daftar Semua Lagu ==");
-                // viewAllSong();
+                member.viewAllSong(lagu, lastIndex); // run function viewAllSong dari class member dengan parameter object lagu dan lastindex untuk perulangan
                 tekanEnter(input);
                 break;
 
               case 2:
                 System.out.println("== Cari Lagu ==");
-                // findSong();
+                member.findSong(lagu, lastIndex); // run function viewAllSong dari class member dengan parameter object lagu dan lastindex untuk perulangan
                 tekanEnter(input);
                 break;
 
