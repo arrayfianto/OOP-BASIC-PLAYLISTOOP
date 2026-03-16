@@ -50,7 +50,7 @@ public class PlaylistOOP {
             switch (menuAdmin) {
               case 1:
                 System.out.println("== Daftar Semua Lagu ==");
-                member.viewAllSong(lagu, lastIndex);
+                admin.viewAllSong(lagu, lastIndex);
                 tekanEnter(input);
                 break;
 
@@ -88,13 +88,13 @@ public class PlaylistOOP {
             switch (menuMember) {
               case 1:
                 System.out.println("== Daftar Semua Lagu ==");
-                member.viewAllSong(lagu, lastIndex); // run function viewAllSong dari class member dengan parameter object lagu dan lastindex untuk perulangan
+                member.viewAllSong(lagu, lastIndex); // run function viewAllSong dari class user dengan parameter object lagu dan lastindex untuk perulangan
                 tekanEnter(input);
                 break;
 
               case 2:
                 System.out.println("== Cari Lagu ==");
-                member.findSong(lagu, lastIndex); // run function viewAllSong dari class member dengan parameter object lagu dan lastindex untuk perulangan
+                member.findSong(lagu, lastIndex); // run function viewAllSong dari class user dengan parameter object lagu dan lastindex untuk perulangan
                 tekanEnter(input);
                 break;
 

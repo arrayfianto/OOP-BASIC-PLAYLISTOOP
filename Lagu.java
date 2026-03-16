@@ -44,16 +44,4 @@ public class Lagu {
         System.out.printf ("Artis       : %-15s%n", artis);
         System.out.printf ("Durasi      : %02d:%02d%n", menit, detik);
     }
-    //  public static void main(String[] args) {
-    //     Lagu lagu1 = new Lagu("Kota Ini Tak Sama Tanpa Mu", "Nadhif Basalamah",4.33);
-    //     lagu1.tampilkanInfo();
-
-    //     System.out.println();
-
-    //     // setter
-    //     lagu1.setJudul("Alamak");
-    //     lagu1.setArtis("Rizky Febian");
-    //     lagu1.setDurasi(4.19);
-    //     lagu1.tampilkanInfo();
-    // }
 }
